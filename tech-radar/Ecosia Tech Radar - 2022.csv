@@ -1,0 +1,124 @@
+name,ring,quadrant,isNew,moved,description
+Vue.js / Nuxt,use,languages & frameworks,FALSE,,We use Nuxt for SSR and also make use of Vuex / VueCLI from the Vue.js stack. We plan to move to Vue.js 3.0
+gRPC + Protobuf,use,languages & frameworks,FALSE,,
+Node.js,use,languages & frameworks,FALSE,,
+Golang,use,languages & frameworks,FALSE,,"Primarily used for BE services with high IO workload. 
+Refer to the internal wiki for further guidance. "
+Python,use,languages & frameworks,FALSE,,"Primarily used for workloads in BI/ML, data wrangling tasks and data loading patterns.
+Refer to the internal wiki for further guidance. "
+OpenSearch,use,languages & frameworks,FALSE,,
+Swift (iOS),use,languages & frameworks,FALSE,,
+Java (for Android),use,languages & frameworks,FALSE,,
+Sass,use,languages & frameworks,FALSE,,
+JavaScript,use,languages & frameworks,FALSE,,
+Ghost,use,platforms,FALSE,,Used for Blog and Notifications
+Chromium,use,platforms,FALSE,,
+AWS Cloud Services,use,platforms,FALSE,,"We use AWS as main cloud provider and many of its more common services like: EC2, S3, RDS, Cloudfront, etc. In the rest of the tech radar you can find specific details about some of these services worth highlighting. "
+Docker,use,platforms,FALSE,,
+Amazon RDS,use,platforms,FALSE,,
+Managed Kubernetes (EKS),use,platforms,FALSE,,
+AWS ALB,use,platforms,FALSE,IN,In the critical path now for most traffic
+Cloudflare,use,platforms,TRUE,,Used primarily as anti-spam solution. Still want to explore other usecases of the Cloudflare ecosystem.
+Firefox for iOS,use,platforms,TRUE,,We build our iOS App on top of this.
+Docker (for local development),use,techniques,FALSE,IN,Used mainly for BE development at the moment
+Monorepo,use,techniques,FALSE,IN,"We are using a monorepo for our main Web stack. 
+Not including mobile apps, infrastructure and other external projects."
+Code Reviews,use,techniques,FALSE,,
+Continuous Deployment,use,techniques,FALSE,,
+DevOps,use,techniques,FALSE,,
+T-Shaped Skills,use,techniques,FALSE,,
+Feature Flags,use,techniques,FALSE,,
+Pair Programming,use,techniques,FALSE,,We use pair programming occasionally and we want to encourage our teams to do it a bit more frequently than now.
+Test Coverage thresholds,use,techniques,FALSE,,"We adopted thresholds for ""unit test"" coverage in our project builds. 
+Default target is 80% and adjustable by the team."
+Linting,use,techniques,FALSE,,
+Dependabot,use,tools,FALSE,IN,Creating automated PRs for dependency upgrades. Manually reviewed.
+Mobile First,use,techniques,FALSE,,
+Living Style Guide / Design System,use,techniques,FALSE,,
+RFC Process for new applications,use,techniques,FALSE,IN,
+Postmortems,use,techniques,FALSE,,
+Runbooks,use,techniques,FALSE,,
+Engineer On-Call (day time),use,techniques,FALSE,,
+Shadow On-Call Shifts,use,techniques,FALSE,,Shadows shift used as a training opportunity for new engineers.
+Test Plan in Mind Map format,use,techniques,TRUE,,"Helps to visualize the steps, flows and impact for a specific feature. https://miro.com/app/board/o9J_lulXqTo=/"
+Puppies attending meetings 🐶 🐈,use,techniques,TRUE,,"They improve the team mood and they're cute :)
+If you're in the same physical space ask if anyone has allergies or might feel uncomfortable."
+Jupyter Notebooks,use,tools,FALSE,,
+ElasticSearch + Kibana (Snowplow QA),use,tools,FALSE,,
+CircleCI,use,tools,FALSE,,
+GitHub,use,tools,FALSE,,
+Pagerduty,use,tools,FALSE,,
+Terraform,use,tools,FALSE,,
+Prometheus,use,tools,FALSE,,We want to try or assess a managed solution.
+Grafana,use,tools,FALSE,,We want to try or assess a managed solution.
+Yarn,use,tools,FALSE,,
+Snowplow,use,tools,FALSE,,
+Amazon Redshift,use,tools,FALSE,,
+Amazon Athena,use,tools,FALSE,,
+AWS Glue,use,tools,FALSE,,
+Sentry,use,tools,FALSE,,
+Speedcurve,use,tools,FALSE,,Used for our page speed and latency KPIs. Occasionally for manual checks of new releases
+Pingdom,use,tools,FALSE,,
+Flagr,use,tools,FALSE,,Used for feature toggles and A/B testing
+Lighthouse,use,tools,FALSE,,
+Looker,use,tools,FALSE,,
+Vault,use,tools,FALSE,,In part replaced with SOPS - should follow up with platform on guidelines when vault is still needed.
+OpenVPN,use,tools,FALSE,,
+Make files,use,tools,FALSE,,
+Cypress,use,tools,FALSE,,
+Jest,use,tools,FALSE,,
+Airflow,use,tools,FALSE,,
+Storybook,use,tools,FALSE,,Design System Page flora.ecosia.org
+mbt,use,tools,FALSE,,Looking for a replacement as is not anymore mantained - needs a follow up.
+cookiecutter,use,tools,FALSE,,
+Loki,use,tools,FALSE,,
+Alertmanager,use,tools,FALSE,,
+Webpack,use,tools,FALSE,,
+Helmfile,use,tools,FALSE,,
+Jsonnet,use,tools,FALSE,,Might be dropped. Potentially replaced by Kustomize.
+dbt,use,tools,TRUE,,dbt (data building tool) is a command-line tool that enables data analysts and engineers to transform data simply by writing SQL statements (it also includes some jinja templating for implementing testing logic)
+poetry,use,tools,TRUE,,Python packaging and dependency management made easy (https://github.com/python-poetry/poetry)
+Zephyr,use,tools,TRUE,,Testing management tool integrated with Jira.
+Github Actions,use,tools,TRUE,,"In use in several repos, often together with Circle CI or other tools. GitHub actions offer free credits for open source projects."
+BrowserStack,use,tools,FALSE,,Simulate different web browser/OS/devices/versions both for manual tests and automation
+TypeScript,trial,languages & frameworks,FALSE,,Used in only one external project for now
+Zurb for emails,trial,languages & frameworks,FALSE,,
+Django (for internal data entry tools only),trial,languages & frameworks,FALSE,,
+Django REST Framework/Fast API,trial,languages & frameworks,TRUE,,Explore python based web development alterantives for rapid prototypes as well as robust generic web applications
+Cloudflare Access + Teams,trial,platforms,TRUE,,"Used to protect internal services (Grafana, Flora, etc) as VPN alternative"
+Architectural Decision records,trial,techniques,TRUE,,https://ecosia.atlassian.net/wiki/spaces/DEV/pages/2092761226/Architectural+Decision+Records
+Kustomize,trial,tools,FALSE,,
+Redash,trial,tools,TRUE,,"Explore, query, visualize, and share data from any data sources (https://github.com/getredash/redash)"
+Amazon Redshift Spectrum,trial,tools,TRUE,,Perform SQL queries from a Reshift cluster on data stored in S3 buckets
+Selenium webdriver,trial,tools,TRUE,,"Used for E2E automation testing. https://www.selenium.dev/documentation/webdriver/
+Might drop it soon in favour of Nightwish"
+Nightwatch,trial,tools,TRUE,,"Potentially a replacement/wrapper for Selenium, currently in trial for the web-extension"
+Kotlin (for Android),assess,languages & frameworks,FALSE,,First attempts to use it inside of our current Chromium project didn't succeed
+"Go web framework (e.g. gin, martini, ...)",assess,languages & frameworks,TRUE,,
+AWS Aurora DB,assess,platforms,FALSE,,"Could be re-assessed for cross-region data syncronization. Heavily
+ depends on the R/W access patterns and how they're geographically distributed."
+AWS SageMaker Deployment,assess,platforms,TRUE,,
+AWS SageMaker Studio Lab,assess,platforms,TRUE,,
+"Serverless options (to be evaluated) 
+AWS Lambda+API Gateway, etc.",assess,platforms,TRUE,,
+Snowplow Server-side Events,assess,techniques,TRUE,,
+Managed Prometheus,assess,tools,TRUE,,Added to reflect platform roadmap.
+Managed Grafana,assess,tools,TRUE,,Added to reflect platform roadmap.
+Tilt,assess,tools,FALSE,,Local development with Kubernetes: https://tilt.dev/
+Pants,assess,tools,TRUE,,"Build orchestration tool. https://www.pantsbuild.org/ 
+Potential replacement for mbt. "
+jaeger,assess,tools,FALSE,,
+Papermill,assess,tools,TRUE,,https://github.com/nteract/papermill for Jupyter notebook parametrisation and execution
+XCode Cloud,assess,tools,TRUE,,https://developer.apple.com/xcode-cloud/
+Airbyte,assess,tools,TRUE,,"Tool to sync data from applications, APIs & databases to warehouses, lakes & other destinations - https://github.com/airbytehq/airbyte"
+Applitools Eyes,assess,tools,TRUE,,"""The World's Most Intelligent Automated Testing Platform, Powered by Visual AI"" https://applitools.com/products-eyes/"
+pip env,drop,languages & frameworks,FALSE,OUT,Moved to drop in favour of poetry
+PySpark,drop,languages & frameworks,FALSE,OUT,
+Backbone + jQuery,drop,languages & frameworks,FALSE,,Used only in some of our legacy applications that we plan to decommission
+Strapi,drop,languages & frameworks,FALSE,OUT,"CMS for landing pages. 
+Should potentially be replaced with a managed CMS in the future. Alternative to be assessed."
+Nginx / open resty,drop,platforms,FALSE,OUT,I'm not sure: are we thinking to replace usages with ALBs?
+AWS SageMaker,drop,platforms,FALSE,OUT,"We tried it and don't want to adopt the whole SageMaker solution. 
+Picked only the good parts to be re-assessed."
+Luigi,drop,tools,FALSE,,to be replaced by Airflow
+Gulp,drop,tools,FALSE,,To be replaced by Webpack
